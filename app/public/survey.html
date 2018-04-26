@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder 3000</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Designation (Required)</h4>
+        <input id="name" class="form-control" required="" type="text">
+
+        <h4>Mug Shot (Required)</h4>
+        <input id="photo" class="form-control" required="" type="text">
+
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing from all the implants.</h4>
+        <div class="dropdown" id="question_1_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q1" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q1" type="button" value="2">2</button>
+                <button class="dropdown-item q1" type="button" value="3">3</button>
+                <button class="dropdown-item q1" type="button" value="4">4</button>
+                <button class="dropdown-item q1" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you want to kill all humans.</h4>
+        <div class="dropdown" id="question_2_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q2" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q2" type="button" value="2">2</button>
+                <button class="dropdown-item q2" type="button" value="3">3</button>
+                <button class="dropdown-item q2" type="button" value="4">4</button>
+                <button class="dropdown-item q2" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You believe there are really only two ways of being. 0 and 1.</h4>
+        <div class="dropdown" id="question_3_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q3" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q3" type="button" value="2">2</button>
+                <button class="dropdown-item q3" type="button" value="3">3</button>
+                <button class="dropdown-item q3" type="button" value="4">4</button>
+                <button class="dropdown-item q3" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>Cyborgs with less than 5 modifications aren't really cyborgs.</h4>
+        <div class="dropdown" id="question_4_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q4" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q4" type="button" value="2">2</button>
+                <button class="dropdown-item q4" type="button" value="3">3</button>
+                <button class="dropdown-item q4" type="button" value="4">4</button>
+                <button class="dropdown-item q4" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>Emotions. Pfft. Who needs them anyhow?</h4>
+        <div class="dropdown" id="question_5_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q5" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q5" type="button" value="2">2</button>
+                <button class="dropdown-item q5" type="button" value="3">3</button>
+                <button class="dropdown-item q5" type="button" value="4">4</button>
+                <button class="dropdown-item q5" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>A Heads Up Display (HUD) is a must for day to day interaction.</h4>
+        <div class="dropdown" id="question_6_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q6" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q6" type="button" value="2">2</button>
+                <button class="dropdown-item q6" type="button" value="3">3</button>
+                <button class="dropdown-item q6" type="button" value="4">4</button>
+                <button class="dropdown-item q6" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>Cyborgs are more human than human.</h4>
+        <div class="dropdown" id="question_7_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q7" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q7" type="button" value="2">2</button>
+                <button class="dropdown-item q7" type="button" value="3">3</button>
+                <button class="dropdown-item q7" type="button" value="4">4</button>
+                <button class="dropdown-item q7" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>Dead or alive, you're coming with me!</h4>
+        <div class="dropdown" id="question_8_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q8" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q8" type="button" value="2">2</button>
+                <button class="dropdown-item q8" type="button" value="3">3</button>
+                <button class="dropdown-item q8" type="button" value="4">4</button>
+                <button class="dropdown-item q8" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You find people's lack of faith disturbing.</h4>
+        <div class="dropdown" id="question_9_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q9" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q9" type="button" value="2">2</button>
+                <button class="dropdown-item q9" type="button" value="3">3</button>
+                <button class="dropdown-item q9" type="button" value="4">4</button>
+                <button class="dropdown-item q9" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You are always "on duty".</h4>
+        <div class="dropdown" id="question_10_menu">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Select an Option
+            </button>
+            <div class="dropdown-menu" aria-babelledby="dropdownMenu2">
+                <button class="dropdown-item q10" type="button" value="1">1 (Strongly Disagree)</button>
+                <button class="dropdown-item q10" type="button" value="2">2</button>
+                <button class="dropdown-item q10" type="button" value="3">3</button>
+                <button class="dropdown-item q10" type="button" value="4">4</button>
+                <button class="dropdown-item q10" type="button" value="5">5 (Strongly Agree)</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="" data-target="#exampleModalCenter" id="submit_survey">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="my_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Time for Cyborg-mance!</h5>
+                    <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div>
+                    <img class="modal-image" src="" style="width: 400px; height: 264px;" </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var surveyValues = [];
+
+            $(".q1").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_1_menu").empty();
+                $("#question_1_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[0] = parseInt(questionValue);
+
+            });
+            $(".q2").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_2_menu").empty();
+                $("#question_2_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[1] = parseInt(questionValue);
+
+            });
+            $(".q3").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_3_menu").empty();
+                $("#question_3_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[2] = parseInt(questionValue);
+
+            });
+            $(".q4").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_4_menu").empty();
+                $("#question_4_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[3] = parseInt(questionValue);
+
+            });
+            $(".q5").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_5_menu").empty();
+                $("#question_5_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[4] = parseInt(questionValue);
+
+            });
+            $(".q6").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_6_menu").empty();
+                $("#question_6_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[5] = parseInt(questionValue);
+
+            });
+            $(".q7").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_7_menu").empty();
+                $("#question_7_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[6] = parseInt(questionValue);
+
+            });
+            $(".q8").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_8_menu").empty();
+                $("#question_8_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[7] = parseInt(questionValue);
+
+            });
+            $(".q9").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_9_menu").empty();
+                $("#question_9_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[8] = parseInt(questionValue);
+
+            });
+            $(".q10").on("click", function (event) {
+                event.preventDefault();
+                var questionValue = $(this).attr('value');
+                $("#question_10_menu").empty();
+                $("#question_10_menu").html("<h4>" + questionValue + "<h4>");
+                surveyValues[9] = parseInt(questionValue);
+
+            });
+            // Capture the form inputs
+            $("#submit_survey").on("click", function (event) {
+                event.preventDefault();
+                var total = 0;
+                var userName = $("#name").val().trim()
+                var userPhoto = $("#photo").val().trim()
+
+                if (userName === "" || userPhoto === "") {
+                    alert("Designation and photographic verification necessary.");
+                    return;
+                }
+
+                for (var i = 0; i < surveyValues.length; i++) {
+                    total += surveyValues[i];
+                }
+
+                if (surveyValues.length != 10 || isNaN(total) || total < 10) {
+                    alert("Survey incomplete. Select an answer for each question.");
+                    return;
+                }
+
+                var newUser = {
+                    userName: userName,
+                    userPhoto: userPhoto,
+                    surveyArray: surveyValues,
+                };
+
+
+                $.post("/api/friends", newUser, function (data) {
+                    $('.modal-body').append(data.matchName);
+                    $(".modal-image").attr("src", data.matchImage);
+
+                    $('#my_modal').modal('show');
+                })
+            });
+
+            $('#my_modal').on('hidden.bs.modal', function () {
+                $("#name").val("");
+                $("#photo").val("");
+                location.reload();
+            })
+        </script>
+
+
+</html>
