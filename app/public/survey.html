@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link href="../assets/css/style.css" type="text/css" rel="stylesheet">
     <style>
+        /* For some reason, the style sheet was not linking when using Heroku. Since there are minimal styles, I placed them here */
+
         body {
             background: black;
             font-family: "Gugi", cursive;
@@ -59,14 +61,15 @@
         <h3>
             <strong>About You</strong>
         </h3>
+        <!-- This is where a new user inputs their name -->
         <h4>Designation (Required)</h4>
         <input id="name" class="form-control" required="" type="text">
-
-        <h4>Mug Shot (Required)</h4>
+        <!-- This is where the user puts in a URL for their picture -->
+        <h4>Mug Shot URL(Required)</h4>
         <input id="photo" class="form-control" required="" type="text">
 
         <hr>
-
+        <!-- The questions that the user will be asked -->
         <h3>
             <strong>Question 1</strong>
         </h3>
@@ -292,6 +295,7 @@
             </div>
         </div>
 
+        <!-- Because of hte issues with heroku, the Javascript was placed in page -->
         <script type="text/javascript">
             var surveyValues = [];
 
